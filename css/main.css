@@ -220,24 +220,24 @@ a:hover {
     padding: 0px 0px 0px 0px;
 }
 
-.post {
+article {
     overflow: hidden;
     margin-bottom: 40px;
     border-bottom: 1px solid #E7EBED;
 }
 
-.post .title {
+article .title {
     padding: 7px 0px 0px 0px;
     letter-spacing: -1px;
 }
 
-.post .title a {
+article .title a {
     border: none;
     text-decoration: none;
     color: #222222;
 }
 
-.post .meta {
+article .meta {
     margin-bottom: 30px;
     padding: 10px 0px 0px 0px;
     text-align: left;
@@ -246,18 +246,18 @@ a:hover {
     font-weight: 300;
 }
 
-.post .meta .date {
+article .meta .date {
     float: left;
 }
 
-.post .meta .posted {
+article .meta .posted {
     float: right;
 }
 
-.post .meta a {
+article .meta a {
 }
 
-.post .entry {
+article .entry {
     padding: 0px 0px 40px 0px;
     text-align: justify;
 }
