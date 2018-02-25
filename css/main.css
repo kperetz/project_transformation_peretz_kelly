@@ -44,7 +44,7 @@ a {
 a:hover {
 }
 
-#wrapper {
+main {
     background: #FFFFFF url(../img/img05.jpg) repeat;
 }
 
@@ -220,24 +220,24 @@ a:hover {
     padding: 0px 0px 0px 0px;
 }
 
-article {
+.post {
     overflow: hidden;
     margin-bottom: 40px;
     border-bottom: 1px solid #E7EBED;
 }
 
-article .title {
+.post .title {
     padding: 7px 0px 0px 0px;
     letter-spacing: -1px;
 }
 
-article .title a {
+.post .title a {
     border: none;
     text-decoration: none;
     color: #222222;
 }
 
-article .meta {
+.post .meta {
     margin-bottom: 30px;
     padding: 10px 0px 0px 0px;
     text-align: left;
@@ -246,18 +246,18 @@ article .meta {
     font-weight: 300;
 }
 
-article .meta .date {
+.post .meta .date {
     float: left;
 }
 
-article .meta .posted {
+.post .meta .posted {
     float: right;
 }
 
-article .meta a {
+.post .meta a {
 }
 
-article .entry {
+.post .entry {
     padding: 0px 0px 40px 0px;
     text-align: justify;
 }
