@@ -4,9 +4,9 @@ Kelly Peretz
 
 ## Links
 Github:
-Web host:
+Web host: http://kellyperetz.com/project_transformation_peretz_kelly/
 W3C validator:
-HTML5 Outliner:
+HTML5 Outliner:https://gsnedders.html5.org/outliner/process.py
 
 
 ## Resources
