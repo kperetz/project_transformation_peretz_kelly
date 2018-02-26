@@ -5,7 +5,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #5B5B5B;
-    width: 97%;
+    width: 98%;
+
 }
 
 h1, h2 {
@@ -36,7 +37,8 @@ a:hover {
 
 main {
     background: #FFFFFF url(../img/img05.jpg) repeat;
-    width: 100%
+    width: 100%;
+     
 }
 
 .container {
@@ -143,12 +145,13 @@ nav a:hover, nav .current_page_item a {
     margin-top:0%;
     width: 100%;
     height: 30%;
-    background: url(../img/img03.png) no-repeat;
+    background: url(../img/img03.png) ;
+    object-fit: fill;
+    
 }
 
 #banner .content {
     width: 100%;
-    height: 25%;
 }
 
 /* Page */
@@ -157,6 +160,7 @@ nav a:hover, nav .current_page_item a {
     width: 100%;
     margin: 0 auto;
     padding: 30px 0px;
+    height: 100%;
 }
 
 /* Content */
@@ -164,8 +168,9 @@ nav a:hover, nav .current_page_item a {
 #content {
     clear: both;
     width: 100%;
-    padding-left: 2%;
-    padding-right: 4%;
+    padding-left: 4%;
+    padding-right: 1%;
+    height: auto;
 }
 
 
@@ -312,7 +317,7 @@ aside a:hover {
 footer {
     height: 140px;
     margin: 0 auto;
-    padding: 50px 0 15px 0;
+    padding: 35px 0 35px 0;
     font-family: 'Abel', sans-serif;
 }
 
@@ -384,14 +389,16 @@ footer a {
     margin: 0;
     padding: 0;
     list-style: none;
-}
+    width: 100%;    
+    display: inline;
+    padding-left: 15%;
 
+}
 
     aside li ul {
     margin: 0px 0px;
-    padding-bottom: 5%;
 }
-
+ 
     aside li li {
     
     border-bottom: 1% solid #E7EBED;
@@ -432,7 +439,7 @@ footer a {
     border: none;
 }
 
-aside a:hover {
+    aside a:hover {
     text-decoration: underline;
 }
 
@@ -458,3 +465,278 @@ aside a:hover {
 }
 
 }
+
+@media (min-width:700px){
+    nav a {
+    font-size: 1.6rem;
+}
+#content {
+    float: right;
+    clear: left;
+    width: 60% ;
+    height: 100%;
+    }
+.post {
+    
+    margin-bottom: 10%;
+    border-bottom: 1% solid #E7EBED;
+}
+
+.post .title {
+    padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+.post .title a {
+    border: none;
+    text-decoration: none;
+    color: #222222;
+}
+
+.post .meta {
+    margin-bottom: 7%;
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.post .meta .date {
+    font-size: 1rem;
+}
+
+.post .meta .posted {
+    padding-left: 25%;
+    font-size: 0.9rem;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+    padding: 0;
+    padding-right:1%;
+    text-align: justify;
+}
+
+
+.links {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.more {
+    display: inline;
+    font-size: 0.6rem;
+    width: 10%;
+    padding: 1.5% 1.5%;
+    margin-right: 10px;
+    background: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.comments {
+    font-size: 0.6rem;
+    display: inline;
+    width: 10%;
+    padding: 1.5% 1.5%;
+    background: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* aside */
+
+aside {
+    
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+    padding-left: 3%;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 5%;
+
+}
+aside ul li{
+        padding-top: 1%
+    }
+
+
+aside li ul {
+    margin: 0px 0px;
+    padding-bottom: 15%;
+    padding-top: 15%;
+}
+
+aside li li {
+    
+    border-bottom: 10% solid #E7EBED;
+    margin: 0px 0px;
+    border-left: none;
+    
+}
+
+aside li li span {
+    display: block;
+    margin-top: -20px;
+    padding: 0;
+    font-size: 1rem;
+    font-style: italic;
+    
+}
+
+aside li li a {
+    text-decoration: none;
+    padding: 0px 0px 0px 20px;
+    background: url(../img/img04.jpg) no-repeat left 50%;
+}
+
+aside h2 {
+    height: 38px;
+    padding-top: 6%;
+    letter-spacing: -.5px;
+    font-size: 1.5rem;
+    color: #222222;
+}
+
+aside p {
+    margin: 0 0px;
+    padding: 0px 30px 20px 30px;
+    text-align: justify;
+}
+
+aside a {
+    border: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+main {
+    background: #FFFFFF url(../img/img05.jpg) repeat;
+    width: 100%;
+    padding-bottom: 110%; 
+}
+
+footer {
+    height: 20%;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    font-family: 'Abel', sans-serif;
+}
+
+footer p {
+    margin: 0 auto;
+    padding-top: 1%;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+footer a {
+    color: #5E5E5E;
+}
+
+}
+@media (min-width: 730px){
+ main {
+    background: #FFFFFF url(../img/img05.jpg) repeat;
+    width: 100%;
+    height: 1250px; 
+}
+    footer {
+    height: 30%;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    font-family: 'Abel', sans-serif;
+}   
+}
+@media (min-width: 790px){
+    main{
+     height:1170px;    
+    }
+}
+@media (min-width: 800px){
+    .post .meta .posted {
+    padding-left: 33%;
+    font-size: 0.9rem;
+}
+main {
+    background: #FFFFFF url(../img/img05.jpg) repeat;
+    width: 100%;     
+}
+footer {
+    height: 20%;
+    margin: 0 auto;
+    padding: 35px 0 35px 0;
+    font-family: 'Abel', sans-serif;
+}
+
+}
+@media (min-width: 870px){
+    main {
+    height: 1000px; 
+}
+    }
+}
+@media (min-width: 900px){
+  main {
+    background: #FFFFFF url(../img/img05.jpg) repeat;
+    width: 100%;
+    height: auto; 
+}
+footer {
+    height: 20%;
+    margin: 0 auto;
+    padding: 35px 0 35px 0;
+    font-family: 'Abel', sans-serif;
+}
+  
+}
+@media (min-width:930px){
+    main {
+    height: 900px; 
+}
+@media (min-width: 1000px){
+    main {
+    background: #FFFFFF url(../img/img05.jpg) repeat;
+    width: 100%;
+    padding-bottom: 50%; 
+    height: auto;    
+}
+
+footer {
+    clear: all;
+    height: 20%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 0 35px 0;
+    font-family: 'Abel', sans-serif;
+    
+}
+    footer p{
+        width: 100%;
+        display: inline-block;
+    }
+     .post .meta .posted {
+    padding-left: 46%;
+    
+}  
+}
+@media (min-width: 1120px){
+    main{
+        height: auto;
+    }    
+    }
