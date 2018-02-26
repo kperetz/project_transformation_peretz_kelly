@@ -5,9 +5,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #5B5B5B;
+    width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2 {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -17,24 +18,12 @@ h1, h2, h3 {
     color: #222222;
 }
 
-h1 {
-    font-size: 2em;
-}
-
 h2 {
-    font-size: 2.8em;
+ font-size: 3rem;
 }
-
-h3 {
-    font-size: 1.6em;
-}
-
 p, ul, ol {
     margin-top: 0;
     line-height: 180%;
-}
-
-ul, ol {
 }
 
 a {
@@ -42,14 +31,16 @@ a {
 }
 
 a:hover {
+    color: aqua;
 }
 
 main {
     background: #FFFFFF url(../img/img05.jpg) repeat;
+    width: 100%
 }
 
 .container {
-    width: 1000px;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -60,29 +51,28 @@ main {
 }
 
 #header {
-    width: 1000px;
-    height: 150px;
+    width: 100%;
+    height: 10%;
     margin: 0 auto;
-    padding: 0px 0px;
+    padding-left: 2%;
+    
 }
 
 /* Logo */
 
 #logo {
     float: left;
-    width: 300px;
-    margin: 0;
+    width: 90%;
+    height: 10%;
+    margin-top: 3%;
     padding: 0;
     color: #FFFFFF;
-}
-
-#logo h1, #logo p {
 }
 
 #logo h1 {
     line-height: 120px;
     letter-spacing: -2px;
-    font-size: 3.8em;
+    font-size: 5rem;
 }
 
 #logo h1 a {
@@ -90,18 +80,6 @@ main {
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
 }
 
-#logo p {
-    margin: 0;
-    padding: 0px 0 0 0px;
-    letter-spacing: -1px;
-    font: normal 18px Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-    color: #8E8E8E;
-}
-
-#logo p a {
-    color: #8E8E8E;
-}
 
 #logo a {
     border: none;
@@ -110,89 +88,47 @@ main {
     color: #000000;
 }
 
-/* Splash */
-
-#splash {
-    width: 960px;
-    height: 300px;
-    margin: 0px auto;
-}
-
-/* Search */
-
-#search {
-    float: right;
-    width: 280px;
-    height: 60px;
-    padding: 20px 0px 0px 0px;
-}
-
-#search form {
-    height: 41px;
-    margin: 0;
-    padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-#search-text {
-    width: 170px;
-    padding: 6px 5px 2px 5px;
-    border: 1px solid #E7EBED;
-    background: #FFFFFF;
-    text-transform: lowercase;
-    font: normal 11px Arial, Helvetica, sans-serif;
-    color: #5D781D;
-}
-
-#search-submit {
-    width: 50px;
-    height: 22px;
-    border: none;
-    background: #B9B9B9;
-    color: #000000;
-}
-
 /* NAV */
 
 nav {
-    float: right;
-    width: 500px;
-    height: 90px;
-    margin: 0 auto;
-    padding: 0;
+  display: inline;
+  clear: both;
+  padding: 2%;
+  width: 100%;
+  height: 30%;
 }
 
 nav ul {
-    float: right;
-    margin: 0;
-    padding: 20px 0px 0px 0px;
-    list-style: none;
-    line-height: normal;
+  margin-top: 12%;
+  list-style-type: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 30%;
 }
 
-nav li {
-    float: left;
+nav li{
+    padding: 0;
+    display: inline;
+    width: 100%;
 }
 
 nav a {
-    display: block;
     line-height: 100px;
-    margin-right: 1px;
-    padding: 0px 20px 0px 20px;
+    padding-left: 2%;
+    padding-right: 2%;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 2.3rem;
     font-weight: 300;
     color: #1F1F1F;
     border: none;
+    width: 20%;
+    
 }
 
 nav a:hover, nav .current_page_item a {
@@ -204,10 +140,23 @@ nav a:hover, nav .current_page_item a {
 nav .current_page_item a {
 }
 
+
+#banner {
+    clear: both;
+    margin: 0 auto;
+    margin-top:0%;
+    width: 100%;
+    height: 50%;
+    background: url(../img/img03.png) no-repeat left bottom;
+}
+
+#banner .content {
+}
+
 /* Page */
 
 #page {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px 0px;
 }
@@ -215,11 +164,15 @@ nav .current_page_item a {
 /* Content */
 
 #content {
-    float: right;
-    width: 660px;
-    padding: 0px 0px 0px 0px;
+    clear: both;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 4%;
 }
 
+p.special::nth-word(3){
+    font-weight: bold;
+}
 .post {
     overflow: hidden;
     margin-bottom: 40px;
@@ -242,16 +195,17 @@ nav .current_page_item a {
     padding: 10px 0px 0px 0px;
     text-align: left;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .post .meta .date {
-    float: left;
+    font-size: 1rem;
 }
 
 .post .meta .posted {
-    float: right;
+    padding-left: 40%;
+    font-size: 0.6rem;
 }
 
 .post .meta a {
@@ -262,16 +216,17 @@ nav .current_page_item a {
     text-align: justify;
 }
 
+
 .links {
     padding-top: 20px;
     margin-bottom: 30px;
 }
 
 .more {
-    display: block;
-    float: left;
-    width: 88px;
-    padding: 5px 5px;
+    display: inline;
+    font-size: 0.6rem;
+    width: 10%;
+    padding: 1% 1%;
     margin-right: 10px;
     background: #222222;
     color: #FFFFFF;
@@ -280,10 +235,10 @@ nav .current_page_item a {
 }
 
 .comments {
-    display: block;
-    float: left;
-    width: 88px;
-    padding: 5px 5px;
+    font-size: 0.6rem;
+    display: inline;
+    width: 10%;
+    padding: 1% 1%;
     background: #222222;
     color: #FFFFFF;
     text-align: center;
@@ -293,10 +248,9 @@ nav .current_page_item a {
 /* aside */
 
 aside {
-    float: left;
-    width: 270px;
+    width: 100%;
     margin: 0px;
-    padding: 30px 0px 0px 0px;
+    padding-left: 5%;
 }
 
 aside ul {
@@ -305,10 +259,6 @@ aside ul {
     list-style: none;
 }
 
-aside li {
-    margin: 0;
-    padding: 0;
-}
 
 aside li ul {
     margin: 0px 0px;
@@ -317,7 +267,7 @@ aside li ul {
 
 aside li li {
     line-height: 40px;
-    border-bottom: 1px solid #E7EBED;
+    border-bottom: 1% solid #E7EBED;
     margin: 0px 0px;
     border-left: none;
 }
@@ -326,11 +276,13 @@ aside li li span {
     display: block;
     margin-top: -20px;
     padding: 0;
-    font-size: 11px;
+    font-size: 1rem;
     font-style: italic;
+    
 }
 
 aside li li a {
+    text-decoration: none;
     padding: 0px 0px 0px 20px;
     background: url(../img/img04.jpg) no-repeat left 50%;
 }
@@ -339,7 +291,7 @@ aside h2 {
     height: 38px;
     padding: 0px 0px 30px 0px;
     letter-spacing: -.5px;
-    font-size: 1.8em;
+    font-size: 2.2em;
     color: #222222;
 }
 
@@ -368,11 +320,11 @@ footer {
 }
 
 footer p {
-    margin: 0;
-    padding-top: 10px;
+    margin: 0 auto;
+    padding-top: 1%;
     letter-spacing: 1px;
     line-height: normal;
-    font-size: 14px;
+    font-size: 1.8rem;
     text-transform: uppercase;
     text-align: center;
     color: #5E5E5E;
@@ -380,25 +332,4 @@ footer p {
 
 footer a {
     color: #5E5E5E;
-}
-
-#banner {
-    margin: 0px auto;
-    width: 1000px;
-    height: 340px;
-    background: url(../img/img03.png) no-repeat left bottom;
-}
-
-#banner .content {
-}
-
-
-.list-style1 {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
-.list-style1 a {
-    color: #7F7F7F;
 }
